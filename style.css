@@ -1,0 +1,758 @@
+@font-face {
+  font-family: 'MB';
+  src: url(./fonts/Montserrat-Bold.ttf);
+}
+@font-face {
+  font-family: 'MSB';
+  src: url(./fonts/Montserrat-SemiBold.ttf);
+}
+@font-face {
+  font-family: 'MR';
+  src: url(./fonts/Montserrat-Regular.ttf);
+}
+@font-face {
+  font-family: 'MM';
+  src: url(./fonts/Montserrat-Medium.ttf);
+}
+
+*{
+  box-sizing: border-box;
+}
+
+/* ШРИФТЫ */
+
+h1, h2{
+  font-family: 'MB';
+  font-size: 40px;
+  color: #9b44ff;
+  text-shadow: 1px 1px 1px black;
+  text-align: center;
+}
+.welcome h2, .region h3{
+  font-family: 'MSB';
+  font-size: 22px;
+  color: black;
+  text-shadow: none;
+  text-align: center;
+}
+.welcome .title h2{
+  margin: 10px 0 8px 0;
+}
+.welcome p{
+  font-family: 'MM';
+  font-size: 18px;
+  margin: 8px 0 22px 0;
+}
+.reservation .title h2{
+  margin: 30px 0 40px 0;
+}
+.reservation .card i{
+  font-size: 32px;
+}
+.reservation .card p{
+  font-family: 'MSB';
+  font-size: 22px;
+}
+.reviews h2, .search-form h2, #prom{
+  margin: 80px 0 40px 0;
+}
+.reviews h3{
+  font-family: 'MSB';
+}
+.reviews p{
+  font-family: 'MR';
+}
+.search-form label{
+  font-family: 'MSB';
+}
+#prom h3{
+  font-family: 'MB';
+  font-size: 28px;
+  color: black;
+  margin: 0;
+}
+#prom h4{
+  font-family: 'MSB';
+  font-size: 16px;
+  color: black;
+  margin: 12px 0;
+}
+#prom p{
+  font-family: 'MR';
+}
+#prom h6{
+  font-family: 'MR';
+}
+#prom span{
+  color: #ff7575;
+  text-shadow: 1px 1px 0 black;
+}
+#prom a{
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #ff7575;
+  color: white;
+  font-family: 'MM';
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+#prom a:hover{
+  color: #ff7575;
+  background-color: white;
+  border: 1px solid #ff7575;
+}
+.promotion:first-child, .promotion:last-child{
+  background: linear-gradient(315deg, white 50%, #b9ffff);
+}
+.promotion:nth-child(2){
+  background: linear-gradient(45deg, white 50%, #9affa4);
+}
+.subscribe label{
+  font-family: 'MSB';
+  font-size: 20px;
+}
+.region .card p{
+  font-family: 'MM';
+  font-size: 18px;
+}
+.region .card a{
+  padding: 10px 20px;
+  text-decoration: none;
+  background-color: #ff7575;
+  color: white;
+  font-family: 'MM';
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.region .card a:hover{
+  color: #ff7575;
+  background-color: white;
+  border: 1px solid #ff7575;
+}
+.booking h3{
+  text-align: center;
+  font-family: 'MSB';
+  font-size: 18px;
+  margin: 0;
+}
+.booking h2{
+  margin-bottom: 10px;
+}
+footer p{
+  font-family: 'MR';
+}
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
+
+header, section, footer, main{
+    width: 1200px;
+}
+
+section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: linear-gradient(to right, rgba(255, 197, 185, 0.545), rgba(255, 162, 223, 0.54));
+}
+
+/* Стили для меню навигации */
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav a{
+    text-decoration: none;
+    font-family: 'MR';
+    font-weight: 600;
+    color: rgb(0, 0, 92);
+}
+nav a:hover{
+  color: rgb(0, 0, 195);
+  text-decoration: underline;
+}
+
+/* Стили для секции алгоритма бронирования */
+section:nth-child(2) {
+  text-align: center;
+  padding: 10px 0;
+}
+
+/* Стили для секции информации о компании */
+section:nth-child(3) {
+  text-align: center;
+  padding: 15px 0;
+}
+
+
+/* Стили для формы поиска */
+form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form label,
+form input,
+form button {
+  margin: 10px;
+}
+
+
+/* Стили для формы подписки на закрытые акции */
+section:nth-child(6) form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+/* Стили для подвала сайта */
+footer {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  align-items: center;
+  margin-top: 80px;
+}
+
+
+
+.logo{
+  background: url(./img/for_logo/2.png);
+  background-size: cover;
+  background-position: center;
+  width: 120px;
+  height: 60px;
+  cursor: pointer;
+}
+
+
+
+.welcome{
+  position: relative;
+}
+.welcome .title{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.welcome .title h2{
+  width: 80%;
+}
+.welcome .about{
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+.welcome img{
+  width: 76%;
+  border-radius: 10px;
+}
+.welcome img:nth-child(4), .welcome img:nth-child(5){
+  width: 20%;
+  position: absolute;
+}
+
+#b1{
+  left: -150px;
+  transform: rotate(-30deg);
+}
+#b2{
+  transform: rotate(30deg);
+  right: -150px;
+}
+
+.purpose, .slogan{
+  width: 32%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.purpose h2, .slogan h2{
+  outline: 2px dashed #ff7575;
+  outline-offset: 4px;
+  border-radius: 10px;
+  width: 36%;
+  background-color: white;
+}
+
+
+
+.reservation .cards{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 40% 40%;
+  grid-template-rows: repeat(6, 200px);
+  gap: 30px;
+}
+.reservation .card{
+  display: grid;
+  place-content: center;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgb(120, 120, 120);
+  border-radius: 20px;
+  padding: 20px;
+}
+.reservation .card:last-child{
+  grid-area: 6 / 2;
+}
+.reservation .arrow{
+  display: grid;
+  place-content: center;
+}
+
+
+
+.reservation .card:nth-child(1), .reservation .arrow:nth-child(2),
+.reservation .card:nth-child(5), .reservation .arrow:nth-child(6),
+.reservation .card:nth-child(9), .reservation .arrow:nth-child(10){
+  transform: translateX(-50px);
+  animation-fill-mode: forwards;
+}
+.reservation .card:nth-child(4), .reservation .arrow:nth-child(3),
+.reservation .card:nth-child(8), .reservation .arrow:nth-child(7),
+.reservation .card:last-child{
+  transform: translateX(50px);
+  animation-fill-mode: forwards;
+}
+
+.card-animation{
+  animation: lestnica 2s;
+}
+
+@keyframes lestnica {
+  0%{
+    opacity: 0;
+  }
+  100%{
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+
+.comm{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 40% 40%;
+  gap: 30px;
+}
+.comm .item{
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgb(120, 120, 120);
+  border-radius: 20px;
+  padding: 12px;
+}
+.comm .commentator{
+  display: flex;
+  align-items: center;
+}
+.comm .commentator h3{
+  margin-left: 10px;
+}
+.comm .ava{
+  border-radius: 50%;
+  background: url(./img/ava.jpg);
+  background-size: cover;
+  background-position: center;
+  width: 50px;
+  height: 50px;
+}
+
+
+
+.search-form form{
+  flex-direction: column;
+  outline: 2px dashed #ff7575;
+  outline-offset: 4px;
+  border-radius: 12px;
+  width: 40%;
+  background-color: rgb(255, 255, 255);
+
+}
+.search-form form label{
+  margin: 20px 0 10px 0;
+}
+.search-form select{
+  margin: 0;
+  height: 32px;
+  width: 50%;
+  text-align: center;
+}
+.search-form input{
+  margin: 0;
+  height: 30px;
+  width: 50%;
+  text-align: center;
+}
+.search-form select, .search-form input{
+  font-family: 'MR';
+  font-size: 16px;
+  padding: 0 6px;
+  border-radius: 6px;
+  border: 1px solid #ff7575;
+  outline: none;
+}
+.search-form .peoples-count{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.search-form button{
+  background: #ff7575;
+  color: white;
+  font-family: 'MSB';
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  border: 1px solid transparent;
+  width: 120px;
+  height: 36px;
+  cursor: pointer;
+  margin: 22px 0;
+}
+.search-form button:hover{
+  background: white;
+  color: #ff7575;
+  border: 1px solid #ff7575;
+}
+
+
+
+.promotions{
+  display: flex;
+  flex-direction: column;
+}
+.promotion{
+  display: flex;
+  align-items: center;
+  background-color: white;
+  box-shadow: 0 1px 3px 0 rgb(120, 120, 120);
+  border-radius: 20px;
+  padding: 20px;
+}
+.promotion:nth-child(2){
+  margin: 20px 0;
+}
+.promotion .info{
+  width: 70%;
+}
+.promotion .img{
+  width: 30%;
+  height: 240px;
+  border-radius: 12px;
+  align-self: flex-start;
+  box-shadow: 0 0 2px 0 rgb(78, 78, 78);
+}
+.promotion:first-child .img{
+  background: url(./img/promotions/promotion1.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+.promotion:nth-child(2) .img{
+  background: url(./img/promotions/promotion2.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-left: 20px;
+}
+.promotion:last-child .img{
+  background: url(./img/promotions/promotion3.jpg);
+  background-size: cover;
+  background-position: center;
+  margin-right: 20px;
+}
+
+
+
+.subscribe input{
+  font-family: 'MR';
+  font-size: 20px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #9b44ff;
+  outline: none;
+  width: 400px;
+  height: 50px;
+}
+.subscribe button{
+  height: 50px;
+  width: 120px;
+  font-family: 'MSB';
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #9b44ff;
+  cursor: pointer;
+}
+.subscribe button:hover{
+  color: #9b44ff;
+  background-color: white;
+  border: 1px solid #9b44ff;
+}
+
+
+
+.region .title{
+  border-top: 1px solid #9b44ff;
+  border-bottom: 1px solid #9b44ff;
+}
+.region .title h2{
+  margin: 10px 0;
+}
+.region .title:nth-child(1){
+  margin-top: 40px;
+}
+.region .title:nth-child(4){
+  margin-top: 60px;
+}
+
+
+.region .cards{
+  display: grid;
+  place-content: center;
+  grid-template-columns: 48% 48%;
+  gap: 30px;
+}
+.region .card{
+  display: flex;
+  background: white;
+  box-shadow: 0 1px 3px 0 rgb(120, 120, 120);
+  padding: 10px;
+  border-radius: 12px;
+}
+.region .card .info{
+  margin-left: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 40%;
+}
+.region .card img{
+  width: 60%;
+  border-radius: 10px;
+}
+
+
+
+.plan{
+  text-align: center;
+}
+.plan .url{
+  margin-top: 48px;
+}
+.plan a{
+  padding: 16px 34px;
+  text-decoration: none;
+  font-family: 'MSB';
+  font-size: 20px;
+  color: white;
+  background-color: #ff7575;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.plan a:hover{
+  color: #ff7575;
+  background-color: white;
+  border: 1px solid #ff7575;
+}
+.map{
+  background: url(./img/plan/1.jpg);
+  background-size: cover;
+  width: 100%;
+  height: 96vh;
+  border-radius: 12px;
+  position: relative;
+  box-shadow: 0 0 2px 0 rgb(78, 78, 78);
+}
+.map label{
+  display: flex;
+  align-items: center;
+  font-family: 'MSB';
+  cursor: pointer;
+}
+.map p{
+  background-color: white;
+  border-radius: 8px;
+  padding: 4px;
+  box-shadow: 0 0 4px 0 black;
+}
+.map i{
+  margin-left: 10px;
+  font-size: 46px;
+  color: black;
+  text-shadow: 0 0 8px white;
+}
+
+#d1:checked ~ #l1 i{
+  color: white;
+  text-shadow: 0 0 4px black;
+}
+#d2:checked ~ #l2 i{
+  color: white;
+  text-shadow: 0 0 4px black;
+}
+#d3:checked ~ #l3 i{
+  color: white;
+  text-shadow: 0 0 4px black;
+}
+
+#l1{
+  position: absolute;
+  top: 22%;
+  left: 25%;
+}
+#l2{
+  position: absolute;
+  top: 47%;
+  left: 42%;
+}
+#l3{
+  position: absolute;
+  top: 32%;
+  left: 35%;
+}
+
+
+
+.booking{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.booking form{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 90%;
+}
+.other{
+  margin: 30px 0 20px 0;
+}
+.grid{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 48% 48%;
+  gap: 30px;
+  margin-top: 30px;
+}
+.grid .item{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.grid .item input, .grid .item select{
+  width: 90%;
+  height: 52px;
+  font-family: 'MR';
+  font-size: 18px;
+  padding: 0 10px;
+  border-radius: 6px;
+  border: 1px solid #ff7575;
+  outline: none;
+}
+.grid .item label{
+  align-self: flex-start;
+  margin-left: 30px;
+  font-family: 'MSB';
+  font-size: 16px;
+}
+.finally-cost span{
+  border-bottom: 1px solid;
+}
+.grid .cost h3, .finally-cost h3{
+  font-family: 'MSB';
+  font-size: 30px;
+}
+
+
+.checkbox-row{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+.checkbox-row .chek{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.checkbox-row label{
+  font-family: 'MM';
+  cursor: pointer;
+  margin-left: 5px;
+  width: 80%;
+}
+.checkbox-row input{
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+}
+
+.booking textarea{
+  resize: none;
+  width: 74%;
+  height: 120px;
+  font-family: 'MR';
+  font-size: 18px;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ff7575;
+  outline: none;
+  margin: 30px 0 10px 0;
+}
+
+#em1{
+  width: 74%;
+  height: 60px;
+  font-family: 'MR';
+  font-size: 18px;
+  padding: 5px 10px;
+  border-radius: 6px;
+  border: 1px solid #ff7575;
+  outline: none;
+  margin: 0;
+}
+
+.finally-cost{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 74%;
+  margin-top: 30px;
+}
+.finally-cost button{
+  height: 52px;
+  width: 160px;
+  font-family: 'MSB';
+  font-size: 16px;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 8px;
+  background-color: #9b44ff;
+  cursor: pointer;
+  margin: 0;
+}
+.finally-cost button:hover{
+  color: #9b44ff;
+  border: 1px solid #9b44ff;
+  background-color: white;
+}
